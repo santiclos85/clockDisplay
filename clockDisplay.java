@@ -30,7 +30,7 @@ public class clockDisplay
            
         
        }
-}
+    }
    /**
      * nos permite avanzar en un minuto el tiempo.
      */
@@ -53,17 +53,16 @@ public class clockDisplay
        {
            minutos=minutos+1;
         }
+     }
+/**
+     * devolver una cadena de 5 caracteres
+     */
+    public String getTime()
+   {
+    String horasAhora = "%02d:%02d";
+    String horasMostradas = String.format (horasAhora,horas,minutos);
+    return horasMostradas;
+   }
 }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    
-    {
-        // put your code here
-        
-    }
-}
+ 
