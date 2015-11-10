@@ -17,8 +17,11 @@ public class clockDisplay
     public void setTime(int tiempoHoras,int tiempoMinutos)
     {
         // initialise instance variables
-       if (horas<24 && minutos<60){horas=tiempoHoras;
-           minutos=tiempoMinutos;}
+       if (horas<24 && minutos<60)
+       {
+           horas=tiempoHoras;
+           minutos=tiempoMinutos;
+       }
        else
        {
            
@@ -26,7 +29,30 @@ public class clockDisplay
            
            
         
-    }
+       }
+}
+   /**
+     * nos permite avanzar en un minuto el tiempo.
+     */
+    public void timeTick()
+    {
+      if(horas>=23 && minutos>=59)
+       
+       {
+          horas=0;
+          minutos=0;
+           
+       }
+       else if(horas<=23 && minutos>=59)
+       {
+         horas=horas+1;
+         minutos=0;
+          
+       }
+       else
+       {
+           minutos=minutos+1;
+        }
 }
 
     /**
