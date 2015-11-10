@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=tiempoHoras\ tiempoMinutos
+comment0.target=void\ setTime(int,\ int)
+comment0.text=\n\ nos\ permite\ expresar\ un\ momento\ determinado\ en\ horas\ y\ minutos.\n
+numComments=1
